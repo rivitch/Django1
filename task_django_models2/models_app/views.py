@@ -20,7 +20,7 @@ def product_name(request):
 def order_name(request):
     order=Order(user=User.objects.first(),
         date_ordered=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}', 
-        total_price=str(Product.price*(float(Product.quantity))))
+        total_price=f'{int(Product.price)*Product.quantity}') #str((int(Product.price))*(int(Product.quantity)))
         #total_price=str((int(Product.price))*(int(Product.quantity))))
     order.save()
     return HttpResponse('ОБНОВЛЕНА БАЗА ЗАКАЗОВ')  
