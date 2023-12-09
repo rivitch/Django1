@@ -40,7 +40,7 @@ class User(models.Model):
 class Product(models.Model):
     product = models.CharField(max_length=100) # название товара
     description = models.CharField(max_length=100) # описание товара
-    price = models.DecimalField(max_digits=8, decimal_places=2) # цена              
+    price = models.CharField(max_length=10) #(max_digits=8, decimal_places=2) # цена              
     quantity = models.IntegerField() # количество
     date_add = models.DateField(null=True, blank=True)
     def __str__(self):
