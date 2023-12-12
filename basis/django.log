@@ -1,0 +1,38 @@
+INFO 2023-12-12 21:54:03,719 autoreload 21384 11956 Watching for file changes with StatReloader
+INFO 2023-12-12 21:54:43,768 autoreload 21384 11956 D:\GB\TASKS\Django\basis\basisapp\views.py changed, reloading.
+INFO 2023-12-12 21:54:44,194 autoreload 19824 13144 Watching for file changes with StatReloader
+INFO 2023-12-12 21:56:24,351 autoreload 19824 13144 D:\GB\TASKS\Django\basis\basisapp\views.py changed, reloading.
+INFO 2023-12-12 21:56:24,744 autoreload 10304 7500 Watching for file changes with StatReloader
+INFO 2023-12-12 21:58:54,480 autoreload 10304 7500 D:\GB\TASKS\Django\basis\basis\urls.py changed, reloading.
+INFO 2023-12-12 21:58:54,872 autoreload 8800 24264 Watching for file changes with StatReloader
+WARNING 2023-12-12 22:01:03,843 log 8800 18440 Not Found: /
+WARNING 2023-12-12 22:01:03,843 basehttp 8800 18440 "GET / HTTP/1.1" 404 2167
+WARNING 2023-12-12 22:01:03,943 log 8800 18440 Not Found: /favicon.ico
+INFO 2023-12-12 22:01:03,943 basehttp 8800 18440 - Broken pipe from ('127.0.0.1', 63209)
+INFO 2023-12-12 22:02:30,532 autoreload 8800 24264 D:\GB\TASKS\Django\basis\basis\urls.py changed, reloading.
+INFO 2023-12-12 22:02:30,977 autoreload 19444 23708 Watching for file changes with StatReloader
+INFO 2023-12-12 22:03:41,259 autoreload 19444 23708 D:\GB\TASKS\Django\basis\basis\urls.py changed, reloading.
+INFO 2023-12-12 22:03:41,756 autoreload 17352 3220 Watching for file changes with StatReloader
+INFO 2023-12-12 22:05:40,911 autoreload 17352 3220 D:\GB\TASKS\Django\basis\basis\urls.py changed, reloading.
+INFO 2023-12-12 22:05:41,310 autoreload 8720 19056 Watching for file changes with StatReloader
+INFO 2023-12-12 22:05:59,823 autoreload 11456 17252 Watching for file changes with StatReloader
+INFO 2023-12-12 22:06:30,504 autoreload 11456 17252 D:\GB\TASKS\Django\basis\basis\urls.py changed, reloading.
+INFO 2023-12-12 22:06:30,877 autoreload 19540 20868 Watching for file changes with StatReloader
+INFO 2023-12-12 22:06:33,745 basehttp 19540 17828 "GET / HTTP/1.1" 200 188
+WARNING 2023-12-12 22:06:33,817 log 19540 17828 Not Found: /favicon.ico
+INFO 2023-12-12 22:06:33,817 basehttp 19540 17828 - Broken pipe from ('127.0.0.1', 63436)
+INFO 2023-12-12 22:07:12,946 autoreload 19540 20868 D:\GB\TASKS\Django\basis\basisapp\views.py changed, reloading.
+INFO 2023-12-12 22:07:13,436 autoreload 14076 8264 Watching for file changes with StatReloader
+INFO 2023-12-12 22:07:16,582 basehttp 14076 12552 "GET / HTTP/1.1" 200 205
+WARNING 2023-12-12 22:07:16,665 log 14076 12552 Not Found: /favicon.ico
+INFO 2023-12-12 22:07:16,665 basehttp 14076 12552 - Broken pipe from ('127.0.0.1', 63471)
+INFO 2023-12-12 22:10:32,708 autoreload 14076 8264 D:\GB\TASKS\Django\basis\basis\urls.py changed, reloading.
+INFO 2023-12-12 22:10:33,368 autoreload 1848 15592 Watching for file changes with StatReloader
+INFO 2023-12-12 22:14:17,308 basehttp 1848 17232 "GET / HTTP/1.1" 200 205
+WARNING 2023-12-12 22:14:17,380 log 1848 17232 Not Found: /favicon.ico
+INFO 2023-12-12 22:14:17,380 basehttp 1848 17232 - Broken pipe from ('127.0.0.1', 63774)
+INFO 2023-12-12 22:19:41,192 autoreload 1848 15592 D:\GB\TASKS\Django\basis\basisapp\views.py changed, reloading.
+INFO 2023-12-12 22:19:41,689 autoreload 23408 10656 Watching for file changes with StatReloader
+INFO 2023-12-12 22:19:45,172 basehttp 23408 12932 "GET / HTTP/1.1" 200 284
+WARNING 2023-12-12 22:19:45,256 log 23408 12932 Not Found: /favicon.ico
+INFO 2023-12-12 22:19:45,256 basehttp 23408 12932 - Broken pipe from ('127.0.0.1', 63968)

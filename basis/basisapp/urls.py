@@ -12,8 +12,9 @@ from . import views
 """
 
 urlpatterns = [
-        #path('', views.index, name='index'),product  order
-        path('user/', views.user_name),# name='author_name'
-        path('order/', views.order_name), # name='about'
-        path('product/', views.product_name),
+        path('', views.index),# name='index')#,product  order
+        #path('', views.index, name='index'),#,product  order
+        # path('user/', views.user_name),# name='author_name'
+        # path('order/', views.order_name), # name='about'
+        # path('product/', views.product_name),
         ]
