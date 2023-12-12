@@ -3,6 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 from random import *
+#from pytz import timezone
 from .models import User, Product, Order
 
 def user_name(request):

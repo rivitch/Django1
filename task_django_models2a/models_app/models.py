@@ -20,6 +20,7 @@ class User(models.Model):
     tel = models. TextField()
     adress = models. TextField()   #models.TextField()
     date_of_registration = models.DateField(null=True, blank=True)
+    #time_now = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         """
