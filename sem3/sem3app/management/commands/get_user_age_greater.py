@@ -2,7 +2,7 @@
 получить всех пользователей старше <age> лет, мы можем использовать следующий код в файле myapp2/management/commands/get_user_age_greater.py:"""
 
 from django.core.management.base import BaseCommand
-from lec2app.models import User
+from sem3app.models import User
 
 class Command(BaseCommand):
     help = "Get user with age greater <age>."

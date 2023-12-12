@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from random import *
-from lec2app.models import User #Author, Post
+from sem3app.models import User #Author, Post
 
 class Command(BaseCommand):
     help = "Generate fake User."# and posts."
