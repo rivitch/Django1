@@ -1,0 +1,92 @@
+INFO 2023-12-12 18:11:02,230 autoreload 1156 9744 Watching for file changes with StatReloader
+INFO 2023-12-12 18:11:14,118 basehttp 1156 11956 "GET / HTTP/1.1" 200 210
+WARNING 2023-12-12 18:11:14,203 log 1156 11956 Not Found: /favicon.ico
+INFO 2023-12-12 18:11:14,218 basehttp 1156 11956 - Broken pipe from ('127.0.0.1', 54927)
+INFO 2023-12-12 18:12:11,892 autoreload 1156 9744 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-12 18:12:12,317 autoreload 8084 11944 Watching for file changes with StatReloader
+INFO 2023-12-12 18:12:14,287 basehttp 8084 17344 "GET / HTTP/1.1" 200 186
+WARNING 2023-12-12 18:12:14,345 log 8084 17344 Not Found: /favicon.ico
+INFO 2023-12-12 18:12:14,345 basehttp 8084 17344 - Broken pipe from ('127.0.0.1', 54948)
+INFO 2023-12-12 18:14:31,267 autoreload 8084 11944 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 18:14:31,715 autoreload 14432 10880 Watching for file changes with StatReloader
+WARNING 2023-12-12 18:14:44,485 log 14432 11452 Not Found: /user/
+WARNING 2023-12-12 18:14:44,485 basehttp 14432 11452 "GET /user/ HTTP/1.1" 404 2722
+WARNING 2023-12-12 18:14:44,588 log 14432 11452 Not Found: /favicon.ico
+INFO 2023-12-12 18:14:44,588 basehttp 14432 11452 - Broken pipe from ('127.0.0.1', 55051)
+ERROR 2023-12-12 18:15:02,322 log 14432 19760 Internal Server Error: /user/2
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: user_name() got an unexpected keyword argument 'int'
+ERROR 2023-12-12 18:15:02,322 basehttp 14432 19760 "GET /user/2 HTTP/1.1" 500 61679
+INFO 2023-12-12 18:17:17,330 autoreload 14432 10880 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-12 18:17:17,712 autoreload 6184 17072 Watching for file changes with StatReloader
+INFO 2023-12-12 18:17:21,013 autoreload 6184 17072 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 18:17:21,489 autoreload 21288 25588 Watching for file changes with StatReloader
+INFO 2023-12-12 18:17:27,243 basehttp 21288 13956 "GET /user/2 HTTP/1.1" 200 44
+WARNING 2023-12-12 18:17:27,358 log 21288 13956 Not Found: /favicon.ico
+INFO 2023-12-12 18:17:27,358 basehttp 21288 13956 - Broken pipe from ('127.0.0.1', 55159)
+INFO 2023-12-12 18:18:52,352 autoreload 21288 25588 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 18:18:52,768 autoreload 21128 6476 Watching for file changes with StatReloader
+ERROR 2023-12-12 18:19:13,158 log 21128 9040 Internal Server Error: /product/10
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: product_name() got an unexpected keyword argument 'count'
+ERROR 2023-12-12 18:19:13,158 basehttp 21128 9040 "GET /product/10 HTTP/1.1" 500 61735
+WARNING 2023-12-12 18:19:13,245 log 21128 9040 Not Found: /favicon.ico
+INFO 2023-12-12 18:19:13,245 basehttp 21128 9040 - Broken pipe from ('127.0.0.1', 55237)
+INFO 2023-12-12 18:19:40,883 autoreload 21128 6476 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-12 18:19:41,284 autoreload 5732 22224 Watching for file changes with StatReloader
+INFO 2023-12-12 18:19:43,648 basehttp 5732 21768 "GET /product/10 HTTP/1.1" 200 42
+WARNING 2023-12-12 18:19:43,748 log 5732 21768 Not Found: /favicon.ico
+INFO 2023-12-12 18:19:43,748 basehttp 5732 21768 - Broken pipe from ('127.0.0.1', 55252)
+INFO 2023-12-12 19:47:09,835 autoreload 5732 22224 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-12 19:47:10,361 autoreload 20808 25412 Watching for file changes with StatReloader
+INFO 2023-12-12 19:47:13,592 autoreload 20808 25412 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 19:47:14,175 autoreload 19640 8272 Watching for file changes with StatReloader
+INFO 2023-12-12 19:50:16,685 basehttp 19640 19028 "GET / HTTP/1.1" 200 186
+WARNING 2023-12-12 19:50:16,802 log 19640 19028 Not Found: /favicon.ico
+INFO 2023-12-12 19:50:16,802 basehttp 19640 19028 - Broken pipe from ('127.0.0.1', 57840)
+INFO 2023-12-12 19:52:43,646 autoreload 19640 8272 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-12 19:52:44,240 autoreload 23788 25328 Watching for file changes with StatReloader
+INFO 2023-12-12 19:53:24,121 autoreload 23788 25328 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 19:53:24,605 autoreload 7388 21856 Watching for file changes with StatReloader
+INFO 2023-12-12 19:53:27,930 basehttp 7388 12616 "GET / HTTP/1.1" 200 207
+INFO 2023-12-12 19:53:58,419 autoreload 7388 21856 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-12 19:53:58,853 autoreload 1824 23168 Watching for file changes with StatReloader
+INFO 2023-12-12 19:54:00,739 basehttp 1824 18212 "GET / HTTP/1.1" 200 206
+INFO 2023-12-12 20:11:46,364 autoreload 1824 23168 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 20:11:46,861 autoreload 16580 9860 Watching for file changes with StatReloader
+INFO 2023-12-12 20:16:39,114 autoreload 16580 9860 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-12 20:16:39,657 autoreload 22864 17096 Watching for file changes with StatReloader
+INFO 2023-12-12 20:28:58,492 autoreload 22864 17096 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-12 20:28:58,928 autoreload 908 8708 Watching for file changes with StatReloader
+INFO 2023-12-12 20:29:07,718 basehttp 908 13184 "GET / HTTP/1.1" 200 210
+WARNING 2023-12-12 20:29:07,818 log 908 13184 Not Found: /favicon.ico
+INFO 2023-12-12 20:29:07,818 basehttp 908 13184 - Broken pipe from ('127.0.0.1', 59305)
+WARNING 2023-12-12 20:29:25,950 log 908 15088 Not Found: /user_order/
+WARNING 2023-12-12 20:29:25,950 basehttp 908 15088 "GET /user_order/ HTTP/1.1" 404 3139
+INFO 2023-12-12 20:32:05,868 autoreload 908 8708 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 20:32:06,215 autoreload 24796 13336 Watching for file changes with StatReloader
+INFO 2023-12-12 20:36:53,076 autoreload 10652 9940 Watching for file changes with StatReloader
+INFO 2023-12-12 20:37:29,779 autoreload 10652 9940 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 20:37:30,148 autoreload 19200 5960 Watching for file changes with StatReloader
+INFO 2023-12-12 20:38:26,248 autoreload 19200 5960 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 20:38:26,620 autoreload 1752 21720 Watching for file changes with StatReloader
+INFO 2023-12-12 20:38:48,129 autoreload 1752 21720 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 20:38:48,501 autoreload 12796 24524 Watching for file changes with StatReloader
+INFO 2023-12-12 20:38:59,789 autoreload 12796 24524 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-12 20:39:00,153 autoreload 21440 9076 Watching for file changes with StatReloader
+WARNING 2023-12-12 20:39:04,175 log 21440 6772 Not Found: /user_order/
+WARNING 2023-12-12 20:39:04,175 basehttp 21440 6772 "GET /user_order/ HTTP/1.1" 404 2970
+WARNING 2023-12-12 20:39:04,275 log 21440 6772 Not Found: /favicon.ico
+INFO 2023-12-12 20:39:04,275 basehttp 21440 6772 - Broken pipe from ('127.0.0.1', 59713)
