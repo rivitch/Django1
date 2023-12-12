@@ -36,3 +36,9 @@ INFO 2023-12-12 22:19:41,689 autoreload 23408 10656 Watching for file changes wi
 INFO 2023-12-12 22:19:45,172 basehttp 23408 12932 "GET / HTTP/1.1" 200 284
 WARNING 2023-12-12 22:19:45,256 log 23408 12932 Not Found: /favicon.ico
 INFO 2023-12-12 22:19:45,256 basehttp 23408 12932 - Broken pipe from ('127.0.0.1', 63968)
+INFO 2023-12-12 22:41:00,877 autoreload 10720 17548 Watching for file changes with StatReloader
+INFO 2023-12-12 22:41:04,412 basehttp 10720 9964 "GET / HTTP/1.1" 200 284
+WARNING 2023-12-12 22:41:04,665 log 10720 9964 Not Found: /favicon.ico
+INFO 2023-12-12 22:41:04,665 basehttp 10720 9964 - Broken pipe from ('127.0.0.1', 64849)
+INFO 2023-12-12 22:47:58,573 autoreload 22676 15352 Watching for file changes with StatReloader
+INFO 2023-12-12 22:48:03,226 basehttp 22676 21732 "GET / HTTP/1.1" 200 284

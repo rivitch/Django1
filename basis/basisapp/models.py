@@ -22,6 +22,7 @@ class User(models.Model):
     tel = models. TextField()
     adress = models. TextField()   #models.TextField()
     date_of_registration = models.DateField(null=True, blank=True)
+    is_deleted = models.BooleanField(default=False)
 
     def __str__(self):
         """
