@@ -9,5 +9,7 @@ class Command(BaseCommand):
         pk = kwargs.get('pk')
         user = User.objects.filter(pk=pk).first()
         if user is not None:
-            user.delete()
+            user.is_deleted = True
+            user.save()
+            #user.delete()
         self.stdout.write(f'{user}')
