@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from lecsem3app2app.models import User
+from viewsapp.models import User
 
 class Command(BaseCommand):
     help = "Delete user by id."

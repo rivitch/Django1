@@ -5,7 +5,7 @@
 """
 
 from django.core.management.base import BaseCommand
-from sem3app.models import User
+from viewsapp.models import User
 
 class Command(BaseCommand):
     help = "Get user by id."
