@@ -1,0 +1,43 @@
+INFO 2023-12-12 15:47:07,909 autoreload 23244 18936 Watching for file changes with StatReloader
+INFO 2023-12-12 15:47:11,177 autoreload 23244 18936 D:\GB\TASKS\Django\sem3\sem3app\models.py changed, reloading.
+INFO 2023-12-12 15:47:11,683 autoreload 16220 14212 Watching for file changes with StatReloader
+INFO 2023-12-12 15:51:42,289 autoreload 16220 14212 D:\GB\TASKS\Django\sem3\sem3app\views.py changed, reloading.
+INFO 2023-12-12 15:51:42,762 autoreload 11692 13792 Watching for file changes with StatReloader
+INFO 2023-12-12 15:52:23,635 autoreload 11692 13792 D:\GB\TASKS\Django\sem3\sem3app\views.py changed, reloading.
+INFO 2023-12-12 15:52:24,172 autoreload 22676 23072 Watching for file changes with StatReloader
+WARNING 2023-12-12 15:52:41,008 log 22676 5696 Not Found: /sem3app/
+WARNING 2023-12-12 15:52:41,008 basehttp 22676 5696 "GET /sem3app/ HTTP/1.1" 404 2583
+WARNING 2023-12-12 15:52:41,111 log 22676 5696 Not Found: /favicon.ico
+INFO 2023-12-12 15:52:41,112 basehttp 22676 5696 - Broken pipe from ('127.0.0.1', 50288)
+INFO 2023-12-12 15:55:55,590 autoreload 22676 23072 D:\GB\TASKS\Django\sem3\sem3app\urls.py changed, reloading.
+INFO 2023-12-12 15:55:56,062 autoreload 16460 15444 Watching for file changes with StatReloader
+INFO 2023-12-12 15:57:39,953 autoreload 16460 15444 D:\GB\TASKS\Django\sem3\sem3app\views.py changed, reloading.
+INFO 2023-12-12 15:57:40,297 autoreload 12556 8688 Watching for file changes with StatReloader
+INFO 2023-12-12 15:57:55,472 basehttp 12556 17816 "GET /sem3app/ HTTP/1.1" 200 53
+WARNING 2023-12-12 15:57:55,600 log 12556 17816 Not Found: /favicon.ico
+INFO 2023-12-12 15:57:55,600 basehttp 12556 17816 - Broken pipe from ('127.0.0.1', 50643)
+INFO 2023-12-12 16:00:54,342 autoreload 12556 8688 D:\GB\TASKS\Django\sem3\sem3app\views.py changed, reloading.
+INFO 2023-12-12 16:00:54,755 autoreload 24592 5920 Watching for file changes with StatReloader
+INFO 2023-12-12 16:01:12,101 basehttp 24592 5140 "GET /sem3app/ HTTP/1.1" 200 143
+WARNING 2023-12-12 16:01:12,187 log 24592 5140 Not Found: /favicon.ico
+INFO 2023-12-12 16:01:12,187 basehttp 24592 5140 - Broken pipe from ('127.0.0.1', 50769)
+INFO 2023-12-12 16:05:28,388 autoreload 24592 5920 D:\GB\TASKS\Django\sem3\sem3app\views.py changed, reloading.
+INFO 2023-12-12 16:05:28,836 autoreload 7344 5524 Watching for file changes with StatReloader
+INFO 2023-12-12 16:07:19,068 autoreload 7344 5524 D:\GB\TASKS\Django\sem3\sem3app\views.py changed, reloading.
+INFO 2023-12-12 16:07:19,471 autoreload 15112 11124 Watching for file changes with StatReloader
+INFO 2023-12-12 16:07:19,888 basehttp 15112 16720 "GET /sem3app/ HTTP/1.1" 200 228
+WARNING 2023-12-12 16:07:19,973 log 15112 16720 Not Found: /favicon.ico
+INFO 2023-12-12 16:07:19,973 basehttp 15112 16720 - Broken pipe from ('127.0.0.1', 51103)
+INFO 2023-12-12 16:07:40,012 autoreload 15112 11124 D:\GB\TASKS\Django\sem3\sem3app\views.py changed, reloading.
+INFO 2023-12-12 16:07:40,429 autoreload 3692 25096 Watching for file changes with StatReloader
+INFO 2023-12-12 16:07:41,395 basehttp 3692 22508 "GET /sem3app/ HTTP/1.1" 200 225
+WARNING 2023-12-12 16:09:54,464 log 3692 10304 Not Found: /
+WARNING 2023-12-12 16:09:54,464 basehttp 3692 10304 "GET / HTTP/1.1" 404 2165
+WARNING 2023-12-12 16:09:54,550 log 3692 10304 Not Found: /favicon.ico
+INFO 2023-12-12 16:09:54,550 basehttp 3692 10304 - Broken pipe from ('127.0.0.1', 51170)
+WARNING 2023-12-12 16:11:03,740 log 3692 4312 Not Found: /order/
+WARNING 2023-12-12 16:11:03,740 basehttp 3692 4312 "GET /order/ HTTP/1.1" 404 2201
+WARNING 2023-12-12 16:11:03,838 log 3692 4312 Not Found: /favicon.ico
+INFO 2023-12-12 16:11:03,838 basehttp 3692 4312 - Broken pipe from ('127.0.0.1', 51201)
+INFO 2023-12-12 16:12:04,466 autoreload 7092 24216 Watching for file changes with StatReloader
+INFO 2023-12-12 16:18:38,108 autoreload 12860 14628 Watching for file changes with StatReloader
