@@ -6,6 +6,10 @@ class User(models.Model):
     email = models.EmailField()
     password = models.CharField(max_length=100)
     age = models.IntegerField()
+    is_deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f'Username: {self.name}, email: {self.email}, age: {self.age}'
 
 class Product(models.Model):
     name = models.CharField(max_length=100)

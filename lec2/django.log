@@ -6,3 +6,10 @@ INFO 2023-12-12 13:02:15,956 autoreload 12436 8788 D:\GB\TASKS\Django\lec2\lec2a
 INFO 2023-12-12 13:02:16,667 autoreload 13628 17108 Watching for file changes with StatReloader
 INFO 2023-12-12 13:05:01,802 autoreload 13628 17108 D:\GB\TASKS\Django\lec2\lec2app\models.py changed, reloading.
 INFO 2023-12-12 13:05:02,408 autoreload 8144 17620 Watching for file changes with StatReloader
+INFO 2023-12-12 13:52:53,044 autoreload 6736 16904 Watching for file changes with StatReloader
+INFO 2023-12-12 13:52:56,975 basehttp 6736 15928 "GET /about/ HTTP/1.1" 200 23
+WARNING 2023-12-12 13:52:57,074 log 6736 15928 Not Found: /favicon.ico
+INFO 2023-12-12 13:52:57,074 basehttp 6736 15928 - Broken pipe from ('127.0.0.1', 63061)
+INFO 2023-12-12 13:53:03,484 basehttp 6736 1824 "GET / HTTP/1.1" 200 13
+WARNING 2023-12-12 13:53:03,565 log 6736 1824 Not Found: /favicon.ico
+INFO 2023-12-12 13:53:03,565 basehttp 6736 1824 - Broken pipe from ('127.0.0.1', 63063)
