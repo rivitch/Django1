@@ -151,3 +151,7 @@ INFO 2023-12-13 07:59:15,448 autoreload 19932 10880 Watching for file changes wi
 INFO 2023-12-13 07:59:18,525 basehttp 19932 21268 "GET /user_order/1/3 HTTP/1.1" 200 107
 INFO 2023-12-13 07:59:48,463 autoreload 19932 10880 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
 INFO 2023-12-13 07:59:49,129 autoreload 22196 20416 Watching for file changes with StatReloader
+INFO 2023-12-13 08:32:39,257 autoreload 24712 7636 Watching for file changes with StatReloader
+INFO 2023-12-13 08:32:43,158 basehttp 24712 2064 "GET /user_order/1/3 HTTP/1.1" 200 107
+WARNING 2023-12-13 08:32:43,273 log 24712 2064 Not Found: /favicon.ico
+INFO 2023-12-13 08:32:43,273 basehttp 24712 2064 - Broken pipe from ('127.0.0.1', 54133)
