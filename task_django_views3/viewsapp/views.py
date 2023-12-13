@@ -68,10 +68,15 @@ def product_name(request, count):
     logger.info('ОБНОВЛЕНА БАЗА ТОВАРОВ')   
     return HttpResponse('ОБНОВЛЕНА БАЗА ТОВАРОВ')
 
-def user_order(request,id, days):
-    user = get_object_or_404(User, pk=User.id)
+def user_order(request,id, days):#, days
+    user = get_object_or_404(User, pk=id)
+    logger.info('User.id = {User.id}')
     order = Order.objects.filter(user=user).order_by('-id')[:days]
-    return render(request, "sem3app/index_sem3app.html", {'user': user, 'order': order})
+    if not order:
+        return HttpResponse(f'Пользователь = {user},<br>Заказов за {days} дня(дней) нет')
+    #return render(request, "sem3app/index_sem3app.html", {'user': user, 'order': order})
+    #return HttpResponse({'user': user, 'order': order})
+    return HttpResponse(f'Пользователь = {user},<br>Заказов за {days} дня(дней) = {order}')
 
 def order_name(request):
     order=Order(user=User.objects.first(),

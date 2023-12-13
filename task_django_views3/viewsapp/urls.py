@@ -22,7 +22,7 @@ urlpatterns = [
         path('order/', views.order_name), # name='about'
         path('product/<int:count>', views.product_name),
         #path('client/<int:day>',view_client, name='client'),
-        path('user_order/<int:id>/<int:day>',user_order, name='user_order'),
+        path('user_order/<int:id>/<int:days>',user_order, name='user_order'),#<int:day>
 
         # path('client/<int:day>',view_client,name='client'),user_order
         # path('hello/', helloView, name='hello'),# указываем имя функции в качестве обработчика запроса
