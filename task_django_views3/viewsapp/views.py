@@ -74,9 +74,9 @@ def user_order(request,id, days):#, days
     order = Order.objects.filter(user=user).order_by('-id')[:days]
     if not order:
         return HttpResponse(f'Пользователь = {user},<br>Заказов за {days} дня(дней) нет')
-    #return render(request, "viewsapp/index_viewsapp.html", {'user': user, 'order': order})
+    return render(request, "viewsapp/index_viewsapp.html", {'user': user, 'order': order})
     #return HttpResponse({'user': user, 'order': order})
-    return HttpResponse(f'Пользователь = {user},<br>Заказов за {days} дня(дней) = {order}')
+    #return HttpResponse(f'Пользователь = {user},<br>Заказов за {days} дня(дней) = {order}')
 
 def order_name(request):
     order=Order(user=User.objects.first(),
