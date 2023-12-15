@@ -1,0 +1,26 @@
+INFO 2023-12-13 10:12:02,250 autoreload 18404 13196 Watching for file changes with StatReloader
+INFO 2023-12-13 10:15:19,275 autoreload 18996 11452 Watching for file changes with StatReloader
+INFO 2023-12-13 10:15:21,684 basehttp 18996 20276 "GET / HTTP/1.1" 200 10664
+INFO 2023-12-13 18:17:31,042 autoreload 17844 3712 Watching for file changes with StatReloader
+WARNING 2023-12-13 18:18:44,090 log 17844 908 Not Found: /
+WARNING 2023-12-13 18:18:44,090 basehttp 17844 908 "GET / HTTP/1.1" 404 2231
+WARNING 2023-12-13 18:18:44,189 log 17844 908 Not Found: /favicon.ico
+WARNING 2023-12-13 18:18:44,189 basehttp 17844 908 "GET /favicon.ico HTTP/1.1" 404 2282
+ERROR 2023-12-13 18:21:38,143 log 17844 12200 Internal Server Error: /user/add/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\lec4\lec4app\views.py", line 12, in user_form
+    if form.is_valid():
+       ^^^^
+UnboundLocalError: cannot access local variable 'form' where it is not associated with a value
+ERROR 2023-12-13 18:21:38,143 basehttp 17844 12200 "GET /user/add/ HTTP/1.1" 500 65202
+INFO 2023-12-13 18:27:51,718 autoreload 10316 17028 Watching for file changes with StatReloader
+WARNING 2023-12-13 18:27:55,058 log 10316 19224 Not Found: /
+WARNING 2023-12-13 18:27:55,058 basehttp 10316 19224 "GET / HTTP/1.1" 404 2231
+WARNING 2023-12-13 18:27:55,294 log 10316 19224 Not Found: /favicon.ico
+INFO 2023-12-13 18:27:55,294 basehttp 10316 19224 - Broken pipe from ('127.0.0.1', 64289)

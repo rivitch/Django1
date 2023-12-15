@@ -6,43 +6,67 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-#from .models import User, Product, Order
+from .models import User, Product, Order
 #from django.views import View
+
+from django.core.management.base import BaseCommand
 
 logger = logging.getLogger(__name__)
 
 def index(request):
     logger.info('BASIS page accessed')
-    return HttpResponse(f'ВЫ НА ГЛАВНОЙ СТРАНИЦЕ DJANGO<br><br>Используя URLconf, определенный в basisapp.urls, Django попробовал эти шаблоны URL в следующем порядке:<br> admin/<br>user/<br>order/<br>product/<br>user_order/<int:day>' 
-    )
+    return HttpResponse(f'ВЫ НА ГЛАВНОЙ СТРАНИЦЕ (DJANGO)<br><br>Используя URLconf, определенный в basisapp.urls, Django попробовал эти шаблоны URL в следующем порядке:<br> admin/<br>fake_data/<int:count><br>product_table/<int:count>')
+    #user/<br>order/<br>product/<br>user_order/<int:day>' 
+    
 
-# def user_name(request, count):
-#     for i in range(count):
-#         user = User(first_name=f'Имя {randint(000, 999)}', last_name=f'Фамилия {randint(000, 999)}', email=f'{randint(000, 999)}@mail.ru', tel=f'+7800{randint(1111111, 9999999)}', adress=f'Адрес {randint(000, 999)}', date_of_registration=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}')
-#         user.save()
-#     logger.info('ОБНОВЛЕНА БАЗА КЛИЕНТОВ')
-#     return HttpResponse('ОБНОВЛЕНА БАЗА КЛИЕНТОВ')
+def fake_data(request, count):
+    #x = 1  # if needed password
+    for i in range(count*5):
+        y = randint(111, 999)
+        product = Product(product=f'Товар{y}', 
+                          description=f'Описание {y}',  
+                          price=randint(1, 10), 
+                          quantity=randint(1, 100), 
+                          date_add=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}',
+                          is_deleted=f'{0}',
+                          )
+        product.save()
+    logger.info('ОБНОВЛЕНА ТЕСТОВАЯ БАЗА ТОВАРОВ')    
+    for i in range(count):
+        y = randint(111, 999)
+        users = User(first_name=f'Имя{y}', 
+                    last_name=f'Фамилия{y}', 
+                    email=f'mail{y}@mail.ru', 
+                    tel=f'+7800{randint(1111111, 9999999)}',
+                    adress=f'Адрес {y}', 
+                    date_of_registration=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}',
+                    is_deleted=f'{0}',
+                    #password=f'{y}',
+                    )
+        users.save()
+        for i in range(count*3):
+            y = randint(111, 999)
+            #x = randint(1, count*5)
+            order=Order(user=users,
+                        product = Product.objects.get(id=randint(1, count*5)),
+                        date_ordered=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}',
+                        total_price=product.price*product.quantity,
+                        is_deleted=f'{0}',
+                        )
+            order.save()
+        logger.info('ОБНОВЛЕНА ТЕСТОВАЯ БАЗА ЗАКАЗОВ')
+        #users.save()    
+    logger.info('ОБНОВЛЕНА ТЕСТОВАЯ БАЗА КЛИЕНТОВ')
 
-# def product_name(request, count):
-#     for i in range(count):
-#         product = Product(product=f'Товар {randint(000, 999)}', description=f'Описание {randint(000, 999)}',  price=f'{randint(1, 10)}', quantity=f'{randint(1, 100)}', date_add=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}')
-#         product.save()
-#     logger.info('ОБНОВЛЕНА БАЗА ТОВАРОВ')   
-#     return HttpResponse('ОБНОВЛЕНА БАЗА ТОВАРОВ')
-
-# def user_order(request,id, days):
-#     user = get_object_or_404(User, pk=User.id)
-#     order = Order.objects.filter(user=user).order_by('-id')[:days]
-#     return render(request, "sem3app/index_sem3app.html", {'user': user, 'order': order})
-
-# def order_name(request):
-#     order=Order(user=User.objects.first(),
-#         date_ordered=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}', 
-#         total_price=f'{int(Product.price)*Product.quantity}') #str((int(Product.price))*(int(Product.quantity)))
-#         #total_price=str((int(Product.price))*(int(Product.quantity))))
-#     order.save()
-#     logger.info('ОБНОВЛЕНА БАЗА ЗАКАЗОВ')   
-#     return HttpResponse('ОБНОВЛЕНА БАЗА ЗАКАЗОВ')  
-
-
-
+    
+    # return HttpResponse('ОБНОВЛЕНА ТЕСТОВАЯ БАЗА ЗАКАЗОВ')   
+    return HttpResponse(f'ОБНОВЛЕНА БАЗА ЗАКАЗОВ<br>y = {y}<br>user={users}<br>product={product}<br>цена = {product.price}<br>количество = {product.quantity}<br>total_price = {order.total_price}<br>product id = {product.id}<br><br>id ={Product.objects.get(id=randint(1, count*5))}<br>цена = {product.price}<br>количество = {product.quantity}<br>total_price = {order.total_price}<br>product id = {product.id}')  
+#------------------
+def product_table(request, count):
+    for i in range(1,count):
+        product = Product.objects.get(id=i)
+        print((f'ВЫВОД ТЕСТОВОЙ БАЗА ПРОДУКТОВ<br>i = {i}<br>product={product}<br>цена = {product.price}<br>количество = {product.quantity}<br>'))
+        #return HttpResponse(f'ВЫВОД ТЕСТОВОЙ БАЗА ПРОДУКТОВ<br>i = {i}<br>product={product}<br>цена = {product.price}<br>количество = {product.quantity}<br>')
+                            
+        # total_price = {order.total_price}<br>product id = {product.id}<br><br>id ={Product.objects.get(id=randint(1, count*5))}<br>цена = {product.price}<br>количество = {product.quantity}<br>total_price = {order.total_price}<br>product id = {product.id}')  
+        # # # #return render(request, 'basisapp/product_table.html', {'products': products})

@@ -8,7 +8,7 @@ class Command(BaseCommand):
         parser.add_argument('count', type=int, help='User ID')
     def handle(self, *args, **kwargs):
         count = kwargs.get('count')
-        #x = 1
+        #x = 1  # if needed password
         for i in range(1, count + 1):
             y = randint(000, 999)
             user = User(first_name=f'Имя{y}', last_name=f'Фамилия{y}', email=f'mail{y}@mail.ru', tel=f'+7800{randint(1111111, 9999999)}',adress=f'Адрес {y}', date_of_registration=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}',is_deleted=f'{0}')

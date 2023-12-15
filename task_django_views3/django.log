@@ -155,3 +155,92 @@ INFO 2023-12-13 08:32:39,257 autoreload 24712 7636 Watching for file changes wit
 INFO 2023-12-13 08:32:43,158 basehttp 24712 2064 "GET /user_order/1/3 HTTP/1.1" 200 107
 WARNING 2023-12-13 08:32:43,273 log 24712 2064 Not Found: /favicon.ico
 INFO 2023-12-13 08:32:43,273 basehttp 24712 2064 - Broken pipe from ('127.0.0.1', 54133)
+INFO 2023-12-13 08:51:07,879 autoreload 18440 9112 Watching for file changes with StatReloader
+INFO 2023-12-13 08:51:10,850 basehttp 18440 14844 "GET /user_order/1/3 HTTP/1.1" 200 107
+WARNING 2023-12-13 08:51:11,105 log 18440 14844 Not Found: /favicon.ico
+INFO 2023-12-13 08:51:11,105 basehttp 18440 14844 - Broken pipe from ('127.0.0.1', 54482)
+INFO 2023-12-13 08:51:33,750 basehttp 18440 20520 "GET /user_order/1/365 HTTP/1.1" 200 109
+WARNING 2023-12-13 08:51:50,953 log 18440 20520 Not Found: /user_order/4/365
+WARNING 2023-12-13 08:51:50,953 basehttp 18440 20520 "GET /user_order/4/365 HTTP/1.1" 404 3147
+INFO 2023-12-13 08:54:16,137 basehttp 18440 12460 "GET /user_order/2/365 HTTP/1.1" 200 109
+INFO 2023-12-13 09:06:19,935 autoreload 18440 9112 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-13 09:06:21,524 autoreload 11372 15376 Watching for file changes with StatReloader
+INFO 2023-12-13 09:56:20,936 autoreload 13424 21524 Watching for file changes with StatReloader
+INFO 2023-12-13 09:56:24,304 basehttp 13424 4268 "GET /user_order/2/365 HTTP/1.1" 200 109
+WARNING 2023-12-13 09:56:24,657 log 13424 4268 Not Found: /favicon.ico
+INFO 2023-12-13 09:56:24,658 basehttp 13424 4268 - Broken pipe from ('127.0.0.1', 56037)
+INFO 2023-12-13 09:56:40,143 basehttp 13424 20700 "GET / HTTP/1.1" 200 210
+ERROR 2023-12-13 09:57:00,020 log 13424 20700 Internal Server Error: /order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py", line 83, in order_name
+    total_price=f'{int(Product.price)*Product.quantity}') #str((int(Product.price))*(int(Product.quantity)))
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'DeferredAttribute'
+ERROR 2023-12-13 09:57:00,020 basehttp 13424 20700 "GET /order/ HTTP/1.1" 500 65954
+INFO 2023-12-13 09:57:41,963 autoreload 13424 21524 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-13 09:57:42,497 autoreload 24332 10016 Watching for file changes with StatReloader
+ERROR 2023-12-13 09:57:45,377 log 24332 2992 Internal Server Error: /order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py", line 83, in order_name
+    total_price=f'{Product.price*Product.quantity}') #str((int(Product.price))*(int(Product.quantity)))
+                   ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for *: 'DeferredAttribute' and 'DeferredAttribute'
+ERROR 2023-12-13 09:57:45,395 basehttp 24332 2992 "GET /order/ HTTP/1.1" 500 65944
+INFO 2023-12-13 10:02:21,745 autoreload 24332 10016 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-13 10:02:22,219 autoreload 16180 18700 Watching for file changes with StatReloader
+ERROR 2023-12-13 10:02:25,938 log 16180 22552 Internal Server Error: /order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: order_name() missing 1 required positional argument: 'count'
+ERROR 2023-12-13 10:02:25,938 basehttp 16180 22552 "GET /order/ HTTP/1.1" 500 61684
+WARNING 2023-12-13 10:02:48,343 log 16180 22552 Not Found: /order/1
+WARNING 2023-12-13 10:02:48,343 basehttp 16180 22552 "GET /order/1 HTTP/1.1" 404 2959
+INFO 2023-12-13 10:04:51,667 autoreload 16180 18700 D:\GB\TASKS\Django\task_django_views3\viewsapp\urls.py changed, reloading.
+INFO 2023-12-13 10:04:52,146 autoreload 18328 15992 Watching for file changes with StatReloader
+ERROR 2023-12-13 10:04:55,053 log 18328 20972 Internal Server Error: /order/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py", line 84, in order_name
+    total_price=f'{Product.price*Product.quantity}') #str((int(Product.price))*(int(Product.quantity)))
+                   ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for *: 'DeferredAttribute' and 'DeferredAttribute'
+ERROR 2023-12-13 10:04:55,053 basehttp 18328 20972 "GET /order/1 HTTP/1.1" 500 66179
+INFO 2023-12-13 10:05:58,780 autoreload 18328 15992 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-13 10:05:59,331 autoreload 17428 7292 Watching for file changes with StatReloader
+ERROR 2023-12-13 10:06:02,917 log 17428 9472 Internal Server Error: /order/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py", line 84, in order_name
+    total_price=f'{int(Product.price)*int(Product.quantity)}') #str((int(Product.price))*(int(Product.quantity)))
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'DeferredAttribute'
+ERROR 2023-12-13 10:06:02,917 basehttp 17428 9472 "GET /order/1 HTTP/1.1" 500 66199
+INFO 2023-12-13 10:08:01,259 autoreload 17428 7292 D:\GB\TASKS\Django\task_django_views3\viewsapp\views.py changed, reloading.
+INFO 2023-12-13 10:08:01,834 autoreload 17164 14200 Watching for file changes with StatReloader

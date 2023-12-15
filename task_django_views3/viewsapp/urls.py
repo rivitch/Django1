@@ -19,7 +19,7 @@ from .views import user_order
 urlpatterns = [
         path('', views.index),# name='index')#,product  order
         path('user/<int:count>', views.user_name),# name='author_name'
-        path('order/', views.order_name), # name='about'
+        path('order/<int:count>', views.order_name), # name='about'
         path('product/<int:count>', views.product_name),
         #path('client/<int:day>',view_client, name='client'),
         path('user_order/<int:id>/<int:days>',user_order, name='user_order'),#<int:day>

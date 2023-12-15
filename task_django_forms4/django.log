@@ -1,0 +1,155 @@
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2508
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 61420)
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2355
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 63628)
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2355
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 63986)
+"GET /fake_data/2 HTTP/1.1" 200 320
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 64355)
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/2 HTTP/1.1" 200 321
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 54479)
+Internal Server Error: /forms/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py", line 32, in many_fields_form
+    if form.is_valid():
+       ^^^^
+UnboundLocalError: cannot access local variable 'form' where it is not associated with a value
+"GET /forms/ HTTP/1.1" 500 64660
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 54685)
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /forms/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py", line 37, in many_fields_form
+    return render(request, 'myapp4/many_fields_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/many_fields_form.html
+"GET /forms/ HTTP/1.1" 500 80477
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 60233)
+D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /forms/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py", line 37, in many_fields_form
+    return render(request, 'myapp4/many_fields_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/many_fields_form.html
+"GET /forms/ HTTP/1.1" 500 80477
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 49355)
+Watching for file changes with StatReloader
+Internal Server Error: /forms/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py", line 37, in many_fields_form
+    return render(request, 'myapp4/many_fields_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/many_fields_form.html
+"GET /forms/ HTTP/1.1" 500 80477
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 50374)
+Watching for file changes with StatReloader
+Internal Server Error: /forms/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\task_django_forms4\task_django_forms4app\views.py", line 37, in many_fields_form
+    return render(request, 'myapp4/many_fields_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/many_fields_form.html
+"GET /forms/ HTTP/1.1" 500 80477
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 52282)

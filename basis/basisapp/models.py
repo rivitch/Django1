@@ -44,8 +44,9 @@ class Product(models.Model):
     price = models.IntegerField() #(max_digits=8, decimal_places=2) # цена              
     quantity = models.IntegerField() # количество
     date_add = models.DateField(null=True, blank=True)
+    is_deleted = models.BooleanField(default=False)
     def __str__(self):
-        return f'{self.name} {self.price} {self.quantity}'
+        return f'{self.product} {self.price} {self.quantity}'
 
 """
 Поля модели «Заказ»:Order
@@ -57,7 +58,8 @@ class Product(models.Model):
 class Order(models.Model):
     user = models.ForeignKey(to='User',on_delete=models.CASCADE)
     product = models.ForeignKey(to='Product',on_delete=models.CASCADE)
-    date_ordered = models.DateTimeField(null=True, blank=True)
+    date_ordered = models.DateField(null=True, blank=True)
     total_price = models.IntegerField()
+    is_deleted = models.BooleanField(default=False)
     def __str__(self):
         return f'{self.product} {self.date_ordered}'

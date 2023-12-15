@@ -56,7 +56,12 @@ def index(request):
 
 def user_name(request, count):
     for i in range(count):
-        user = User(first_name=f'Имя {randint(000, 999)}', last_name=f'Фамилия {randint(000, 999)}', email=f'{randint(000, 999)}@mail.ru', tel=f'+7800{randint(1111111, 9999999)}', adress=f'Адрес {randint(000, 999)}', date_of_registration=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}')
+        user = User(first_name=f'Имя {randint(000, 999)}', 
+                    last_name=f'Фамилия {randint(000, 999)}', 
+                    email=f'{randint(000, 999)}@mail.ru', 
+                    tel=f'+7800{randint(1111111, 9999999)}', 
+                    adress=f'Адрес {randint(000, 999)}', 
+                    date_of_registration=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}')
         user.save()
     logger.info('ОБНОВЛЕНА БАЗА КЛИЕНТОВ')
     return HttpResponse('ОБНОВЛЕНА БАЗА КЛИЕНТОВ')
@@ -75,13 +80,13 @@ def user_order(request,id, days):#, days
     if not order:
         return HttpResponse(f'Пользователь = {user},<br>Заказов за {days} дня(дней) нет')
     return render(request, "viewsapp/index_viewsapp.html", {'user': user, 'order': order})
-    #return HttpResponse({'user': user, 'order': order})
     #return HttpResponse(f'Пользователь = {user},<br>Заказов за {days} дня(дней) = {order}')
 
-def order_name(request):
-    order=Order(user=User.objects.first(),
+def order_name(request, count):
+    for i in range(count):
+        order=Order(user=User.objects.first(),product = Product.objects.first(),
         date_ordered=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}', 
-        total_price=f'{int(Product.price)*Product.quantity}') #str((int(Product.price))*(int(Product.quantity)))
+        total_price=f'{Product.price*Product.quantity}') #str((int(Product.price))*(int(Product.quantity)))
         #total_price=str((int(Product.price))*(int(Product.quantity))))
     order.save()
     logger.info('ОБНОВЛЕНА БАЗА ЗАКАЗОВ')   

@@ -13,6 +13,8 @@ from . import views
 
 urlpatterns = [
         path('', views.index),# name='index')#,product  order
+        path('fake_data/<int:count>', views.fake_data),
+        path('product_table/<int:count>', views.product_table),
         #path('', views.index, name='index'),#,product  order
         # path('user/', views.user_name),# name='author_name'
         # path('order/', views.order_name), # name='about'
