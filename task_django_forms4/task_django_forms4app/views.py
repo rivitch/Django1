@@ -30,7 +30,7 @@ def many_fields_form(request):
     if request.method == 'POST':
         form = ManyFieldsForm(request.POST)
         if form.is_valid():
-    # Делаем что-то с данными
+    # Делаем что-то с данными 
             logger.info(f'Получили {form.cleaned_data=}.')
     else:
         form = ManyFieldsForm()
@@ -43,7 +43,7 @@ def index(request):
     #user/<br>order/<br>product/<br>user_order/<int:day>' 
     
 
-def fake_data(request, count):
+def fake_data(request, count):   # заполняем тестовую базу
     #x = 1  # if needed password
     for i in range(count*5):
         y = randint(111, 999)
