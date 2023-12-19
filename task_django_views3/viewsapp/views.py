@@ -68,7 +68,11 @@ def user_name(request, count):
 
 def product_name(request, count):
     for i in range(count):
-        product = Product(product=f'Товар {randint(000, 999)}', description=f'Описание {randint(000, 999)}',  price=f'{randint(1, 10)}', quantity=f'{randint(1, 100)}', date_add=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}')
+        product = Product(product=f'Товар {randint(000, 999)}', 
+                    description=f'Описание {randint(000, 999)}',  
+                    price=f'{randint(1, 10)}', 
+                    quantity=f'{randint(1, 100)}', 
+                    date_add=f'{randint(2022, 2023)}-{randint(1, 12)}-{randint(1, 28)}')
         product.save()
     logger.info('ОБНОВЛЕНА БАЗА ТОВАРОВ')   
     return HttpResponse('ОБНОВЛЕНА БАЗА ТОВАРОВ')

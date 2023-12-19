@@ -44,7 +44,7 @@ class Product(models.Model):
     date_add = models.DateField(null=True, blank=True)
     is_deleted = models.BooleanField(default=False)
     def __str__(self):
-        return f'{self.name} {self.price} {self.quantity}'
+        return f'{self.product} {self.price} {self.quantity}'
 
 """
 Поля модели «Заказ»:Order
@@ -60,4 +60,4 @@ class Order(models.Model):
     total_price = models.IntegerField()
     is_deleted = models.BooleanField(default=False)
     def __str__(self):
-        return f'{self.product} {self.date_ordered}'
+        return f'{self.last_name}, {self.first_name} - '{self.product} {self.date_ordered}'
