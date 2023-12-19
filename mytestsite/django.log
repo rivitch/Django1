@@ -1,0 +1,2376 @@
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /site_app/
+"GET /site_app/ HTTP/1.1" 404 2382
+Not Found: /site_app/fake_data/2
+"GET /site_app/fake_data/2 HTTP/1.1" 404 2415
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/2 HTTP/1.1" 200 320
+Not Found: /site_app/
+"GET /site_app/ HTTP/1.1" 404 2382
+Not Found: /site_app/admin/
+"GET /site_app/admin/ HTTP/1.1" 404 2400
+"GET /admin/ HTTP/1.1" 200 7376
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /admin/ HTTP/1.1" 200 7376
+Internal Server Error: /admin/site_app/order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\models.py", line 61, in __str__
+    return f'{self.last_name}, {self.first_name} - {self.product} {self.date_ordered}'
+              ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'last_name'
+"GET /admin/site_app/order/ HTTP/1.1" 500 356440
+"GET /admin/ HTTP/1.1" 200 7376
+"GET /admin/site_app/product/ HTTP/1.1" 200 11922
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/ HTTP/1.1" 200 9618
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/site_app/order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\models.py", line 61, in __str__
+    return f'{self.last_name}, {self.first_name} - {self.product} {self.date_ordered}'
+              ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'last_name'
+"GET /admin/site_app/order/ HTTP/1.1" 500 356454
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 7376
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+Not Found: /site_app/
+"GET /site_app/ HTTP/1.1" 404 2382
+"GET /admin/ HTTP/1.1" 200 7376
+"GET /admin/password_change/ HTTP/1.1" 200 7887
+"GET /admin/ HTTP/1.1" 200 7376
+Internal Server Error: /admin/site_app/order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\models.py", line 61, in __str__
+    return f'{self.last_name}, {self.first_name} - {self.product} {self.date_ordered}'
+              ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'last_name'
+"GET /admin/site_app/order/ HTTP/1.1" 500 356440
+"GET /admin/ HTTP/1.1" 200 7376
+"GET /admin/site_app/product/ HTTP/1.1" 200 11922
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/ HTTP/1.1" 200 7376
+"GET /admin/site_app/user/ HTTP/1.1" 200 11139
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /admin/site_app/product/ HTTP/1.1" 200 11922
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/site_app/product/ HTTP/1.1" 200 15190
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/ HTTP/1.1" 200 11139
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/site_app/order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\models.py", line 61, in __str__
+    return f'{self.last_name}, {self.first_name} - {self.product} {self.date_ordered}'
+              ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'last_name'
+"GET /admin/site_app/order/ HTTP/1.1" 500 356454
+"GET /admin/site_app/user/ HTTP/1.1" 200 11139
+D:\GB\TASKS\Django_general\mytestsite\mytestsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\mytestsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /site_app/ HTTP/1.1" 200 256
+D:\GB\TASKS\Django_general\mytestsite\mytestsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /site_app/ HTTP/1.1" 200 256
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /site_app/ HTTP/1.1" 200 50
+Not Found: /site_app/admin
+"GET /site_app/admin HTTP/1.1" 404 2783
+"GET /admin/ HTTP/1.1" 200 7376
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+Internal Server Error: /admin/site_app/order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\models.py", line 61, in __str__
+    return f'{self.last_name}, {self.first_name} - {self.product} {self.date_ordered}'
+              ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'last_name'
+"GET /admin/site_app/order/ HTTP/1.1" 500 356440
+"GET /admin/ HTTP/1.1" 200 7376
+"GET /admin/site_app/product/ HTTP/1.1" 200 15190
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+Internal Server Error: /admin/site_app/order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\models.py", line 61, in __str__
+    return f'{self.last_name}, {self.first_name} - {self.product} {self.date_ordered}'
+              ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'last_name'
+"GET /admin/site_app/order/ HTTP/1.1" 500 356457
+"GET /admin/site_app/product/ HTTP/1.1" 200 15190
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/site_app/product/ HTTP/1.1" 200 15190
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/site_app/order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\models.py", line 61, in __str__
+    return f'{self.last_name}, {self.first_name} - {self.product} {self.date_ordered}'
+              ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'last_name'
+"GET /admin/site_app/order/ HTTP/1.1" 500 358465
+"GET /admin/site_app/product/ HTTP/1.1" 200 15190
+"GET /admin/auth/group/ HTTP/1.1" 200 8356
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 11870
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+Internal Server Error: /admin/site_app/order/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\models.py", line 61, in __str__
+    return f'{self.last_name}, {self.first_name} - {self.product} {self.date_ordered}'
+              ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'last_name'
+"GET /admin/site_app/order/ HTTP/1.1" 500 358458
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/auth/user/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4178
+"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4343
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4343
+"GET /site_app/ HTTP/1.1" 200 50
+Not Found: /site_app/admin/
+"GET /site_app/admin/ HTTP/1.1" 404 2786
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+Not Found: /forms/
+"GET /forms/ HTTP/1.1" 404 2529
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2544
+Internal Server Error: /fake_data/2
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    product = Product.objects.get(id=randint(count*5)),
+                                     ^^^^^^^^^^^^^^^^
+TypeError: Random.randint() missing 1 required positional argument: 'b'
+- Broken pipe from ('127.0.0.1', 55782)
+"GET / HTTP/1.1" 200 50
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4324
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4324
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4324
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7041
+"GET /admin/auth/user/ HTTP/1.1" 200 11870
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/ HTTP/1.1" 200 10522
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/product/ HTTP/1.1" 200 15187
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/ HTTP/1.1" 200 10522
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/ HTTP/1.1" 200 8019
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/product/ HTTP/1.1" 200 15187
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/ HTTP/1.1" 200 10522
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/product/ HTTP/1.1" 200 15187
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/ HTTP/1.1" 200 8019
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/add/ HTTP/1.1" 200 13994
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+"POST /admin/site_app/order/add/ HTTP/1.1" 200 14211
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/site_app/order/add/
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 1859, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\contrib\admin\options.py", line 952, in log_addition
+    object_repr=str(obj),
+                ^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\models.py", line 61, in __str__
+    return f'{self.last_name}, {self.first_name} - {self.product} {self.date_ordered}'
+              ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'last_name'
+"POST /admin/site_app/order/add/ HTTP/1.1" 500 129438
+"GET /admin/ HTTP/1.1" 200 7041
+"GET /admin/site_app/order/ HTTP/1.1" 200 8019
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/site_app/order/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/site_app/order/ HTTP/1.1" 200 4188
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/site_app/order/ HTTP/1.1" 200 4353
+"POST /admin/login/?next=/admin/site_app/order/ HTTP/1.1" 200 4353
+"POST /admin/login/?next=/admin/site_app/order/ HTTP/1.1" 200 4353
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7041
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /admin/auth/user/ HTTP/1.1" 200 11870
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /admin/site_app/order/ HTTP/1.1" 200 8019
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/add/ HTTP/1.1" 200 12967
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 8680
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /fake_data/2
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 45, in fake_data
+    order=Order(user=users,
+          ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 658, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use product.set() instead.
+"GET /fake_data/2 HTTP/1.1" 500 77998
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/2
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 45, in fake_data
+    order=Order(user=users,
+          ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Order() got unexpected keyword arguments: 'product'
+"GET /fake_data/2 HTTP/1.1" 500 73984
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/2
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 45, in fake_data
+    order=Order(user=users,
+          ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Order() got unexpected keyword arguments: 'product'
+"GET /fake_data/2 HTTP/1.1" 500 73982
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /site_app/ HTTP/1.1" 200 50
+Not Found: /site_app/admin
+"GET /site_app/admin HTTP/1.1" 404 2783
+Internal Server Error: /fake_data/2
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 45, in fake_data
+    order=Order(user=users,
+          ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Order() got unexpected keyword arguments: 'product'
+"GET /fake_data/2 HTTP/1.1" 500 73850
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /site_app/ HTTP/1.1" 200 50
+"GET /site_app/ HTTP/1.1" 200 50
+Internal Server Error: /production/3
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 63, in production
+    return HttpResponse(f'¬€ Õ¿ —“–¿Õ»÷≈ œ–Œƒ” ÷»» (DJANGO)<br><br>id ={Product.objects.get(id=randint(1, count*5))}')
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+site_app.models.Product.DoesNotExist: Product matching query does not exist.
+"GET /production/3 HTTP/1.1" 500 74997
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /production/3 HTTP/1.1" 200 87
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /site_app/
+"GET /site_app/ HTTP/1.1" 404 2604
+Internal Server Error: /fake_data/2
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 58, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ «¿ ¿«Œ¬<br>y = {y}<br>user={users}<br>product={product}<br>ˆÂÌ‡ = {product.price}<br>ÍÓÎË˜ÂÒÚ‚Ó = {product.quantity}<br>total_price = {order.total_price}<br>product id = {product.id}<br><br>id ={Product.objects.get(id=randint(1, count*5))}<br>ˆÂÌ‡ = {product.price}<br>ÍÓÎË˜ÂÒÚ‚Ó = {product.quantity}<br>total_price = {order.total_price}<br>product id = {product.id}')
+                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+site_app.models.Product.DoesNotExist: Product matching query does not exist.
+"GET /fake_data/2 HTTP/1.1" 500 77336
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/2
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: site_app_order.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 51, in fake_data
+    order.save()
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\base.py", line 901, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\base.py", line 1059, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\base.py", line 1100, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: site_app_order.total_price
+"GET /fake_data/2 HTTP/1.1" 500 148094
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7041
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /admin/auth/user/ HTTP/1.1" 200 11870
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /admin/site_app/product/ HTTP/1.1" 200 16248
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/ HTTP/1.1" 200 11717
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/ HTTP/1.1" 200 12698
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/product/ HTTP/1.1" 200 16248
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/ HTTP/1.1" 200 11717
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/ HTTP/1.1" 200 12698
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/site_app/order/ HTTP/1.1" 200 14612
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Not Found: /site_app/
+"GET /site_app/ HTTP/1.1" 404 2604
+Not Found: /production/
+"GET /production/ HTTP/1.1" 404 2610
+Not Found: /production/
+"GET /production/ HTTP/1.1" 404 2610
+"GET /admin/site_app/order/ HTTP/1.1" 200 14612
+Not Found: /site_app/
+"GET /site_app/ HTTP/1.1" 404 2604
+"GET /production/2 HTTP/1.1" 200 79
+"GET /production/2 HTTP/1.1" 200 79
+"GET /production/2 HTTP/1.1" 200 79
+"GET /production/2 HTTP/1.1" 200 79
+"GET /production/2 HTTP/1.1" 200 79
+"GET /production/2 HTTP/1.1" 200 79
+"GET /production/2 HTTP/1.1" 200 79
+"GET /production/10 HTTP/1.1" 200 79
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /production/10
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 64, in production
+    return HttpResponse(f'¬€ Õ¿ —“–¿Õ»÷≈ œ–Œƒ” ÷»» (DJANGO)<br><br>id ={Product.objects.get(id=randint(1, count))}')
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+site_app.models.Product.DoesNotExist: Product matching query does not exist.
+"GET /production/10 HTTP/1.1" 500 74862
+Not Found: /site_app/
+"GET /site_app/ HTTP/1.1" 404 2604
+"GET /fake_data/2 HTTP/1.1" 200 42
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/1 HTTP/1.1" 200 42
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/1 HTTP/1.1" 200 42
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/1 HTTP/1.1" 200 42
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /fake_data/1 HTTP/1.1" 200 42
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 51, in fake_data
+    product_price = Product.objects.get(product.price),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\sql\query.py", line 1600, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\sql\query.py", line 1632, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\db\models\sql\query.py", line 1479, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+TypeError: cannot unpack non-iterable int object
+"GET /fake_data/1 HTTP/1.1" 500 105564
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 50
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 53288)
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 285
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 284
+Not Found: /production/
+"GET /production/ HTTP/1.1" 404 2610
+"GET /production/3 HTTP/1.1" 200 79
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /production/3
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 84, in production
+    return HttpResponse(f'¬€ Õ¿ —“–¿Õ»÷≈ œ–Œƒ” ÷»» (DJANGO)<br><br>id ={Product.objects.get(price)}')
+                                                                                            ^^^^^
+NameError: name 'price' is not defined. Did you mean: 'print'?
+"GET /production/3 HTTP/1.1" 500 65949
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /production/3 HTTP/1.1" 200 79
+"GET /production/3 HTTP/1.1" 200 79
+"GET /production/3 HTTP/1.1" 200 79
+"GET /production/3 HTTP/1.1" 200 79
+"GET /production/3 HTTP/1.1" 200 79
+"GET /production/3 HTTP/1.1" 200 79
+"GET / HTTP/1.1" 200 284
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 53, in fake_data
+    product_price = Product.objects.get(product.price),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\sql\query.py", line 1423, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+TypeError: cannot unpack non-iterable int object
+"GET /fake_data/1 HTTP/1.1" 500 104878
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 53, in fake_data
+    product_price = Product.objects.get(product.price),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\sql\query.py", line 1423, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+TypeError: cannot unpack non-iterable int object
+"GET /fake_data/1 HTTP/1.1" 500 105038
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/1 HTTP/1.1" 200 92
+"GET /fake_data/1 HTTP/1.1" 200 92
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 48, in fake_data
+    order=Order(user=User.objects.get(id=randint(1,3)),
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+site_app.models.User.DoesNotExist: User matching query does not exist.
+"GET /fake_data/1 HTTP/1.1" 500 75113
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 48, in fake_data
+    order=Order(user=User.objects.get(id=randint(1,3)),
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+site_app.models.User.DoesNotExist: User matching query does not exist.
+"GET /fake_data/1 HTTP/1.1" 500 75148
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/1 HTTP/1.1" 200 92
+"GET /fake_data/1 HTTP/1.1" 200 93
+"GET /fake_data/1 HTTP/1.1" 200 92
+"GET /fake_data/1 HTTP/1.1" 200 92
+"GET /fake_data/1 HTTP/1.1" 200 93
+"GET /fake_data/1 HTTP/1.1" 200 93
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view site_app.views.fake_data didn't return an HttpResponse object. It returned None instead.
+"GET /fake_data/1 HTTP/1.1" 500 66347
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view site_app.views.fake_data didn't return an HttpResponse object. It returned None instead.
+"GET /fake_data/1 HTTP/1.1" 500 66347
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view site_app.views.fake_data didn't return an HttpResponse object. It returned None instead.
+"GET /fake_data/1 HTTP/1.1" 500 66347
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/1 HTTP/1.1" 200 112
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br>id ={x}<br>product.price = {x.price}<br>product.quantity = {x.quantity}')
+                                                                                               ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/1 HTTP/1.1" 500 67116
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br>id ={x}<br>product.price = {x.price}<br>product.quantity = {x.quantity}')
+                                                                                               ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/1 HTTP/1.1" 500 67116
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br>id ={x.id}<br>product.price = {x.price}<br>product.quantity = {x.quantity}')
+                                                                        ^^^^
+AttributeError: 'set' object has no attribute 'id'
+"GET /fake_data/1 HTTP/1.1" 500 67058
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br>id ={x.id}<br>product.price = {x.price}<br>product.quantity = {x.quantity}')
+                                                                        ^^^^
+AttributeError: 'set' object has no attribute 'id'
+"GET /fake_data/1 HTTP/1.1" 500 67058
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br><br>product.price = {x.price}<br>product.quantity = {x.quantity}')#id ={x.id}
+                                                                                        ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/1 HTTP/1.1" 500 67110
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br><br>product.price = {x.price}<br>')#id ={x.id}  product.quantity = {x.quantity}
+                                                                                       ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/1 HTTP/1.1" 500 67115
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br><br>product.price = {x.price}<br>')#id ={x.id}  product.quantity = {x.quantity}
+                                                                                       ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/1 HTTP/1.1" 500 67115
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br><br>product.price = {x.price}<br>')#id ={x.id}  product.quantity = {x.quantity}
+                                                                                       ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/1 HTTP/1.1" 500 67015
+"GET / HTTP/1.1" 200 284
+Internal Server Error: /fake_data/1
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br><br>product.price = {x.price}<br>')#id ={x.id}  product.quantity = {x.quantity}
+                                                                                       ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/1 HTTP/1.1" 500 67015
+D:\GB\TASKS\Django_general\mytestsite\site_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /production/1 HTTP/1.1" 200 79
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /production/1 HTTP/1.1" 200 136
+"GET /production/1 HTTP/1.1" 200 136
+"GET /production/1 HTTP/1.1" 200 136
+"GET /production/1 HTTP/1.1" 200 136
+"GET /production/10 HTTP/1.1" 200 136
+"GET /production/10 HTTP/1.1" 200 136
+"GET /production/10 HTTP/1.1" 200 136
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /production/10 HTTP/1.1" 200 184
+"GET /production/10 HTTP/1.1" 200 184
+"GET /production/10 HTTP/1.1" 200 181
+"GET /production/10 HTTP/1.1" 200 184
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /production/10
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 94, in production
+    list_x.add(x)
+    ^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'add'
+"GET /production/10 HTTP/1.1" 500 65359
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /production/10 HTTP/1.1" 200 184
+"GET /production/10 HTTP/1.1" 200 187
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\mytestsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /production/10
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'Product' object has no attribute 'get'
+"GET /production/10 HTTP/1.1" 500 64824
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /production/3
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'set' object has no attribute 'get'
+"GET /production/3 HTTP/1.1" 500 64802
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /production/3 HTTP/1.1" 200 140
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data_order/3 HTTP/1.1" 200 95
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data_order/3 HTTP/1.1" 200 95
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/3
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br><br>product.price = {x.price}<br>')#id ={x.id}  product.quantity = {x.quantity}
+                                                                                       ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/3 HTTP/1.1" 500 67141
+Internal Server Error: /fake_data/3
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br><br>product.price = {x.price}<br>')#id ={x.id}  product.quantity = {x.quantity}
+                                                                                       ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/3 HTTP/1.1" 500 67142
+Watching for file changes with StatReloader
+Internal Server Error: /fake_data/3
+Traceback (most recent call last):
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\.virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\TASKS\Django_general\mytestsite\site_app\views.py", line 46, in fake_data
+    return HttpResponse(f'Œ¡ÕŒ¬À≈Õ¿ ¡¿«¿ “Œ¬¿–Œ¬ »  À»≈Õ“Œ¬<br><br><br>product.price = {x.price}<br>')#id ={x.id}  product.quantity = {x.quantity}
+                                                                                       ^^^^^^^
+AttributeError: 'set' object has no attribute 'price'
+"GET /fake_data/3 HTTP/1.1" 500 67142
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/3 HTTP/1.1" 200 171
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /fake_data/3 HTTP/1.1" 200 98
+Watching for file changes with StatReloader
+"GET /fake_data/3 HTTP/1.1" 200 98
+"GET /fake_data_order/3 HTTP/1.1" 200 95
+"GET / HTTP/1.1" 200 284
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7041
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/site_app/order/ HTTP/1.1" 200 11518
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/site_app/product/ HTTP/1.1" 200 11417
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/ HTTP/1.1" 200 11718
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/ HTTP/1.1" 200 11518
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 11870
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /admin/site_app/user/ HTTP/1.1" 200 11718
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/user/ HTTP/1.1" 200 11718
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/product/ HTTP/1.1" 200 11417
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/ HTTP/1.1" 200 11518
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/add/ HTTP/1.1" 200 14222
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9048
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"GET /admin/site_app/order/ HTTP/1.1" 200 11518
+"GET /admin/site_app/order/ HTTP/1.1" 200 11518
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/add/ HTTP/1.1" 200 14222
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/order/ HTTP/1.1" 200 11518
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 57557)
+"GET /admin/site_app/order/add/ HTTP/1.1" 200 14222
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9048
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+"POST /admin/site_app/order/add/ HTTP/1.1" 302 0
+"GET /admin/site_app/order/ HTTP/1.1" 200 12312
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"POST /admin/site_app/order/ HTTP/1.1" 200 8100
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/site_app/order/ HTTP/1.1" 302 0
+"GET /admin/site_app/order/ HTTP/1.1" 200 11653
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 11870
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /admin/auth/user/? HTTP/1.1" 200 11870
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/? HTTP/1.1" 200 11870
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/? HTTP/1.1" 200 11870
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 8356
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 11870
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/ HTTP/1.1" 200 5557
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /admin/ HTTP/1.1" 200 7765
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET / HTTP/1.1" 200 284
+D:\GB\TASKS\Django_general\mytestsite\site_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/site_app/order/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/site_app/order/ HTTP/1.1" 200 4188
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2790
+Watching for file changes with StatReloader
+"GET /admin/login/?next=/admin/site_app/order/ HTTP/1.1" 200 4188
+"POST /admin/login/?next=/admin/site_app/order/ HTTP/1.1" 302 0
+"GET /admin/site_app/order/ HTTP/1.1" 200 11518
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /admin/login/?next=/admin/site_app/order/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7765
+"GET /admin/site_app/user/ HTTP/1.1" 200 11718
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/site_app/product/ HTTP/1.1" 200 11417
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/logout/ HTTP/1.1" 200 3553
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4323
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7765
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /admin/auth/user/ HTTP/1.1" 200 11870
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /admin/password_change/ HTTP/1.1" 200 7887
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"POST /admin/password_change/ HTTP/1.1" 200 8059
+"GET /admin/auth/user/ HTTP/1.1" 200 11870
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 8356
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/add/ HTTP/1.1" 200 12787
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+D:\GB\TASKS\Django_general\mytestsite\site_app\models.py changed, reloading.
+Watching for file changes with StatReloader
