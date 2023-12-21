@@ -17,12 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.views.generic import RedirectView
 from django.urls import path, include
+#from .views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('site_app/', include('site_app.urls')),
     path('', include('site_app.urls')),
+    #path('site_app/', include('site_app.urls')),
+    #path('', index),
     #path('site_app/', RedirectView.as_view(url='/site_app/', permanent=True)),
+
+    # Для развертывания проекта
+    path('__debug__/', include('debug_toolbar.urls')), # '__debug__/' - название для адресации страницы любое
 ]
 
 

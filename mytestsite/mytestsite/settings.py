@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+INTERNAL_IPS = [
+'127.0.0.1',
+]
 
 # Application definition
 
@@ -41,16 +44,22 @@ INSTALLED_APPS = [
     # Мои приложения
     #'site_app',
     'site_app.apps.SiteAppConfig',
+    # Развертывание проекта
+    'myapp6',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
+    # Добавка для развертывания проекта - рекомендуется добавлять до маршрутизации
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # Дефолтные приложения Django
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware', 
 ]
 
 ROOT_URLCONF = 'mytestsite.urls'
